@@ -1,0 +1,85 @@
+/* Remove default list styling and customize list items */
+.cityList {
+  list-style: none; /* Remove the dot */
+  padding: 0; /* Remove default padding */
+}
+
+/* Add spacing between city name and button */
+.cityItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Style the delete button */
+.cityItem button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Container for the entire page */
+.appContainer {
+  display: flex;
+  justify-content: space-between; /* Space between the two containers */
+  align-items: flex-start; /* Align containers to the top */
+  margin: 100px auto;
+  max-width: 800px; /* Adjust the width as needed */
+}
+
+
+
+/* Left container for FavoriteCities */
+.favoriteCitiesContainer {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Right container for weather query */
+.weatherContainer {
+  flex: 2;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* No changes needed for body, as it's a global style */
+
+body {
+  background-image: url('/public/images/background.jpg');
+  background-size: cover;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* No changes needed for #weather and img.weather-icon */
